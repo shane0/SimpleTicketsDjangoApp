@@ -5,7 +5,7 @@ this is basically an out of box django app with a few custom admin actions for e
 
 I hosted this on linux, apache, sqlite using blueprint css framework and minimal templates
 
-The basic function was techs can create, email and export tickets/invocies in the admin interface with a few front facing views fpr reporting
+The basic function was techs can create, email and export tickets/invocies in the admin interface with a few front facing views for reporting
 
 other uses are a basic config management db, cmdb part of documentation for ITIL
 
