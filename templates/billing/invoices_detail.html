@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+<h2>Invoice Details</h2>
+<br>
+<br>ID: {{ invoice.id }}
+<br>Date: {{ invoice.date }}
+<br>Email: {{ invoice.email }}
+<br>Billing Code: {{ invoice.billing_code }}
+<hr>
+<br>Description: {{ invoice.invoice_description }}
+<hr>
+<br>Parts: ${{ invoice.parts }}
+<br>Miles: {{ invoice.miles }} @ Mileage rate: {{ invoice.mileage_rate }} + Trip Fee*: ${{ invoice.trip_fee }}
+<br>Hours: {{ invoice.hours }} @ Hourly Rate: ${{ invoice.hourly_rate }}
+<hr>
+<p class="loud">Total: ${{ invoice.total }}</p>
+<br>monthly synapse charge*: {{ invoice.recurring }}
+<br>* if this is marked True this is a monthly service charge (VPN/Internet/Connection to Mercy/Apps/Portal/Email, etc.)
+<br>* trip fee flat rates description: $0 = phone or remote support | $10 = plaza (walking distance) | $20 = drive 
+<br>
+<br><a href="http://10.10.16.56:8008/billing/">back to list</a>
+<br>
+{% endblock %}
