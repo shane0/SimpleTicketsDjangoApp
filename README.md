@@ -11,6 +11,6 @@ I hosted this on linux, apache, sqlite using blueprint css framework and minimal
 
 The basic function was techs can create, email and export tickets/invocies in the admin interface with a few front facing views for reporting and customer review of work done
 
-This easily provides other uses such as asset tracking, kb, basic config management db, cmdb part of documentation for ITIL, DevOps, etc.
+This easily provides other uses such as asset tracking, kb, basic config management db, cmdb part of documentation for ITIL, DevOps, etc. just extend fields in the model.
 
 I have expanded models for that that include more fields if needed
